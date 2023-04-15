@@ -1,1 +1,102 @@
-// Начните писать стили здесь
+//шрифты
+@font-face {
+  font-family : "PT Sans";
+  src         : url("../fonts/ptsans.woff") format("woff");
+  src         : url("../fonts/ptsans.woff2") format("woff2");
+  font-weight : 400;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family : "PT Sans";
+  src         : url("../fonts/ptsansbold.woff") format("woff");
+  src         : url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight : 700;
+  font-style  : normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+
+
+//переменные
+@colorwhite : #ffffff;
+@blue       : #81b3d2;
+@bgcolorhero: #444444;
+@bgcolorgray: #d6d6d6;
+@colorgray:  #333333;
+@colorblack:  #000000;
+
+
+//миксины
+.font-bold {
+  font-family: "PT Sans" , sans-serif;
+  font-style : normal;
+  font-weight: 700;
+}
+.font-regular {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.h-standart {
+  .font-bold();
+  font-size  : 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.h-description {
+  .font-regular();
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.h-standart-bigger {
+  .font-bold();
+  font-size  : 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.h-description-big {
+  .font-regular();
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+
+
+//импорты
+@import url("page.less");
+@import url("main-header.less");
+@import url("main-nav.less");
+@import url("site-list.less");
+@import url("main-container.less");
+@import url("hero.less");
+@import url("about-sedona.less");
+@import url("advantages.less");
+@import url("advantages-list.less");
+@import url("advantages-card.less");
+@import url("extra-card.less");
+@import url("card.less");
+@import url("icon.less");
+@import url("search.less");
+@import url("search-link.less");
+@import url("map.less");
+@import url("main-footer.less");
+@import url("social.less");
+@import url("copyright.less");
+@import url("head-content.less");
+@import url("product-catalog.less");
+@import url("product-list.less");
+@import url("video.less");
+@import url("form.less");
+@import url("product.less");

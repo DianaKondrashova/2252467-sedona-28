@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -53,11 +54,15 @@
     <section class="advantages ">
       <ul class="advantages-list ">
         <li class="advantages-list__item advantages-card advantages-list__item--blue">
-          <h3 class="advantages-card__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-          <p class="advantages-card__number">
-            — №1 —
-          </p>
-          <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <div class="advantages-card__wrapper">
+            <h3 class="advantages-card__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="advantages-card__number">
+              — №1 —
+            </p>
+            <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+
+
           <div class="advantages-card__img">
             <img src="img/city.jpg" width="320" height="260" alt="Фото города и флаги.">
           </div>
@@ -94,43 +99,52 @@
           </ul>
         </li>
         <li class="advantages-list__item advantages-card  advantages-list__item--blue">
-          <h3 class="advantages-card__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-          <p class="advantages-card__number">
-            — №2 —
-          </p>
-          <p class="advantages-card__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+          <div class="advantages-card__wrapper">
+            <h3 class="advantages-card__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+            <p class="advantages-card__number">
+              — №2 —
+            </p>
+            <p class="advantages-card__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+          </div>
           <div class="advantages-card__img">
             <img src="img/mountains.jpg" width="320" height="260" alt="Фото гор.">
           </div>
         </li>
+
         <li class="advantages-list__item advantages-card ">
-          <h3 class="advantages-card__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-          <p class="advantages-card__number">
-            — №3 —
-          </p>
-          <p class="advantages-card__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          <div class="advantages-card__wrapper-small">
+            <h3 class="advantages-card__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <p class="advantages-card__number">
+              — №3 —
+            </p>
+            <p class="advantages-card__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </div>
         </li>
         <li class="advantages-list__item advantages-card ">
-          <h3 class="advantages-card__title">КРАСИВАЯ ДОРОГА</h3>
-          <p class="advantages-card__number">
-            — №4 —
-          </p>
-          <p class="advantages-card__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          <div class="advantages-card__wrapper-small">
+            <h3 class="advantages-card__title">КРАСИВАЯ ДОРОГА</h3>
+            <p class="advantages-card__number">
+              — №4 —
+            </p>
+            <p class="advantages-card__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+          </div>
         </li>
         <li class="advantages-list__item advantages-card ">
-          <h3 class="advantages-card__title">МАЛО ТУРИСТОВ</h3>
-          <p class="advantages-card__number">
-            — №5 —
-          </p>
-          <p class="advantages-card__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          <div class="advantages-card__wrapper-small">
+            <h3 class="advantages-card__title">МАЛО ТУРИСТОВ</h3>
+            <p class="advantages-card__number">
+              — №5 —
+            </p>
+            <p class="advantages-card__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          </div>
         </li>
       </ul>
     </section>
     <section class="search">
-      <h3 class="search__title"> ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-      <p class="search__description">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ, ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕdelete
+      <h3 class="search__title"> заинтересовались?</h3>
+      <p class="search__description">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ, ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ
         ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-      <a class="search-link" href="catalog.html">
+      <a class="search__link" href="catalog.html">
         НАЙТИ ГОСТИНИЦУ
       </a>
     </section>

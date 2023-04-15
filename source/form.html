@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Форма</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -54,8 +55,8 @@
       </div>
     </section>
     <form class="form" method="post" action="#">
-      <h3>Представьтесь</h3>
       <fieldset class="form__reviews">
+        <legend class="form__head">Представьтесь</legend>
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">ИМЯ:*</span>
@@ -75,8 +76,8 @@
           </label>
         </div>
       </fieldset>
-      <h3>Контактная информация:</h3>
       <fieldset class="form__reviews">
+        <legend class="form__head">Контактная информация:</legend>
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">Контактный телефон*:</span>
@@ -92,8 +93,8 @@
           <span class="icon icon--letter"></span>
         </div>
       </fieldset>
-      <h3>Ваше общее впечатление:</h3>
       <fieldset class="form__reviews">
+        <legend class="form__head">Ваше общее впечатление:</legend>
         <div class="form__item">
           <label class="form__field">
             <input class="form__control " type="radio" value="all-cool" name="my-opinion" checked>
@@ -116,8 +117,8 @@
           </label>
         </div>
       </fieldset>
-      <h3>посещенные достопримечательности:</h3>
       <fieldset class="form__reviews">
+        <legend class="form__head">посещенные достопримечательности:</legend>
         <div class="form__item">
           <label class="form__field">
             <input class="form__control " type="checkbox" name="bridge" checked>
@@ -147,16 +148,16 @@
           </label>
         </div>
       </fieldset>
-      <h3>Опишите свои эмоции:</h3>
       <fieldset class="form__reviews">
+        <legend class="form__head">Опишите свои эмоции:</legend>
         <div class="form__item">
           <label class="form__field">
             <textarea class="form__control" placeholder="Опишите подробно все свои восторги" name="emotions"></textarea>
           </label>
         </div>
       </fieldset>
-      <button type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-      <span class="form__hepl-text">* — обязательные поля</span>
+      <button class="form__submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      <span class="form__help-text">* — обязательные поля</span>
     </form>
   </main>
   <footer class="main-footer">

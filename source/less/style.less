@@ -1,102 +1,30 @@
-//шрифты
-@font-face {
-  font-family : "PT Sans";
-  src         : url("../fonts/ptsans.woff") format("woff");
-  src         : url("../fonts/ptsans.woff2") format("woff2");
-  font-weight : 400;
-  font-style  : normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family : "PT Sans";
-  src         : url("../fonts/ptsansbold.woff") format("woff");
-  src         : url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight : 700;
-  font-style  : normal;
-  font-display: swap;
-}
-
-body {
-  font-family: "PT Sans", sans-serif;
-}
-
-
-
-//переменные
-@colorwhite : #ffffff;
-@blue       : #81b3d2;
-@bgcolorhero: #444444;
-@bgcolorgray: #d6d6d6;
-@colorgray:  #333333;
-@colorblack:  #000000;
-
-
-//миксины
-.font-bold {
-  font-family: "PT Sans" , sans-serif;
-  font-style : normal;
-  font-weight: 700;
-}
-.font-regular {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.h-standart {
-  .font-bold();
-  font-size  : 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.h-description {
-  .font-regular();
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-.h-standart-bigger {
-  .font-bold();
-  font-size  : 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.h-description-big {
-  .font-regular();
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-
-
 //импорты
-@import url("page.less");
-@import url("main-header.less");
-@import url("main-nav.less");
-@import url("site-list.less");
-@import url("main-container.less");
-@import url("hero.less");
-@import url("about-sedona.less");
-@import url("advantages.less");
-@import url("advantages-list.less");
-@import url("advantages-card.less");
-@import url("extra-card.less");
-@import url("card.less");
-@import url("icon.less");
-@import url("search.less");
-@import url("search-link.less");
-@import url("map.less");
-@import url("main-footer.less");
-@import url("social.less");
-@import url("copyright.less");
-@import url("head-content.less");
-@import url("product-catalog.less");
-@import url("product-list.less");
-@import url("video.less");
-@import url("form.less");
-@import url("product.less");
+
+@import url("global.less");
+@import url("vars.less");
+@import url("mixins.less");
+@import url("blocks/page.less");
+@import url("blocks/main-header.less");
+@import url("blocks/main-nav.less");
+@import url("blocks/site-list.less");
+@import url("blocks/main-container.less");
+@import url("blocks/hero.less");
+@import url("blocks/about-sedona.less");
+@import url("blocks/advantages.less");
+@import url("blocks/advantages-list.less");
+@import url("blocks/advantages-card.less");
+@import url("blocks/extra-card.less");
+@import url("blocks/card.less");
+@import url("blocks/icon.less");
+@import url("blocks/search.less");
+@import url("blocks/search-link.less");
+@import url("blocks/map.less");
+@import url("blocks/main-footer.less");
+@import url("blocks/social.less");
+@import url("blocks/copyright.less");
+@import url("blocks/head-content.less");
+@import url("blocks/product-catalog.less");
+@import url("blocks/product-list.less");
+@import url("blocks/video.less");
+@import url("blocks/form.less");
+@import url("blocks/product.less");

@@ -1,5 +1,13 @@
 .extra-card {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: @colorwhite;
   padding: 23px 18px 46px 18px;
   list-style-type: none;
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
 }

@@ -15,6 +15,16 @@
   }
 }
 
+.main-nav--nojs {
+  .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
 &.main-nav--opened {
   .main-nav__wrapper {
     display: block;
@@ -29,6 +39,7 @@
 
 .main-nav__wrapper {
   background-color: @colorblue;
+  display: none;
 
   @media (min-width: @tablet-width) {
     background-color: @colorwhite;

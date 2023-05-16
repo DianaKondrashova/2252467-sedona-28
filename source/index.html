@@ -2,35 +2,33 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип" />
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item ">
-            <a class="site-list__link site-list__link--active" href="index.html">
-              Главная
-            </a>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и видео
+            <a class="site-list__link site-list__link--active" href="index.html">Главная
             </a>
+          </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма Отзыва
-            </a>
+            <a class="site-list__link" href="catalog.html"> Фото и видео </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html"> Форма Отзыва </a>
+          </li>
           <li class="site-list__item">
             <a class="site-list__link" href="https://htmlacademy.ru">
               HTML ACADEMY
@@ -42,117 +40,130 @@
   </header>
   <main class="main-container">
     <section class="hero">
-      <img class="hero__img" src="img/hero-text.svg" width="282" height="214" alt="SEDONA.">
+      <img class="hero__img" src="img/hero-text.svg" alt="SEDONA." />
       <h1 class="visually-hidden">SEDONA</h1>
       <p class="visually-hidden">Because the Grand Canyon sucks!</p>
     </section>
     <section class="about-sedona">
       <div class="about-sedona__wrapper">
-        <h2 class="about-sedona__slogan">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего</h2>
-        <p class="about-sedona__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <h2 class="about-sedona__slogan">
+          СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!
+        </h2>
+        <p class="about-sedona__intro">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
       </div>
     </section>
-    <section class="advantages ">
-      <ul class="advantages-list ">
+    <section class="advantages">
+      <ul class="advantages-list">
         <li class="advantages-list__item advantages-card advantages-card--blue">
+          <div class="advantages-card__down-stairs"></div>
           <div class="advantages-card__wrapper">
             <h3 class="advantages-card__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantages-card__number">
-              — №1 —
+            <p class="advantages-card__number">— №1 —</p>
+            <p class="advantages-card__description">
+              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
             </p>
-            <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
-
-
           <div class="advantages-card__img">
-            <img src="img/city.jpg" width="320" height="260" alt="Фото города и флаги.">
+            <img src="img/city.jpg" width="320" height="260" alt="Фото города и флаги." />
           </div>
           <ul class="advantages-card__extra extra-card">
-            <li class="extra-card__item card ">
-              <div class="card__item ">
+            <li class="extra-card__item card">
+              <div class="card__item">
                 <div class="card__icon">
-                  <span class="icon icon--house"></span>
+                  <span class="icon icon--house"> </span>
                 </div>
-                <p class="card__title ">ЖИЛЬЕ</p>
-                <p class="card__description">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
-
+                <p class="card__title">ЖИЛЬЕ</p>
+                <p class="card__description">
+                  РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!
+                </p>
               </div>
             </li>
-            <li class="extra-card__item card ">
-              <div class="card__item ">
+            <li class="extra-card__item card">
+              <div class="card__item">
                 <div class="card__icon">
                   <span class="icon icon--burger"></span>
                 </div>
-
-                <p class="card__title ">ЕДА</p>
-                <p class="card__description">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                <p class="card__title">ЕДА</p>
+                <p class="card__description">
+                  ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
+                </p>
               </div>
             </li>
-            <li class="extra-card__item card ">
-              <div class="card__item ">
+            <li class="extra-card__item card">
+              <div class="card__item">
                 <div class="card__icon">
                   <span class="icon icon--suv"></span>
                 </div>
-                <p class="card__title ">СУВЕНИРЫ</p>
-                <p class="card__description">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                <p class="card__title">СУВЕНИРЫ</p>
+                <p class="card__description">
+                  НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!
+                </p>
               </div>
             </li>
           </ul>
         </li>
-        <li class="advantages-list__item advantages-card  advantages-card--blue">
+        <li class="advantages-list__item advantages-card advantages-card--blue">
           <div class="advantages-card__wrapper advantages-card__wrapper--reverse">
             <h3 class="advantages-card__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-            <p class="advantages-card__number">
-              — №2 —
+            <p class="advantages-card__number">— №2 —</p>
+            <p class="advantages-card__description">
+              ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО
             </p>
-            <p class="advantages-card__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
           </div>
           <div class="advantages-card__img advantages-card__img--reverse">
-            <img src="img/mountains.jpg" width="320" height="260" alt="Фото гор.">
+            <img src="img/mountains.jpg" width="320" height="260" alt="Фото гор." />
           </div>
         </li>
-
-        <li class="advantages-list__item advantages-card ">
+        <li class="advantages-list__item advantages-card">
           <div class="advantages-card__wrapper--small">
             <h3 class="advantages-card__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="advantages-card__number">
-              — №3 —
+            <p class="advantages-card__number">— №3 —</p>
+            <p class="advantages-card__description">
+              ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
             </p>
-            <p class="advantages-card__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </div>
         </li>
-        <li class="advantages-list__item advantages-card ">
+        <li class="advantages-list__item advantages-card">
+          <hr class="advantages-card__mobile-line" />
           <div class="advantages-card__wrapper--small">
             <h3 class="advantages-card__title">КРАСИВАЯ ДОРОГА</h3>
-            <p class="advantages-card__number">
-              — №4 —
+            <p class="advantages-card__number">— №4 —</p>
+            <p class="advantages-card__description">
+              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!
             </p>
-            <p class="advantages-card__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
           </div>
+          <hr class="advantages-card__mobile-line" />
         </li>
-        <li class="advantages-list__item advantages-card ">
+        <li class="advantages-list__item advantages-card">
           <div class="advantages-card__wrapper--small">
             <h3 class="advantages-card__title">МАЛО ТУРИСТОВ</h3>
-            <p class="advantages-card__number">
-              — №5 —
+            <p class="advantages-card__number">— №5 —</p>
+            <p class="advantages-card__description">
+              БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ
             </p>
-            <p class="advantages-card__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
           </div>
         </li>
       </ul>
     </section>
     <section class="search">
-      <h3 class="search__title"> заинтересовались?</h3>
-      <p class="search__description">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ, ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ
-        ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-      <a class="search__link" href="catalog.html">
-        НАЙТИ ГОСТИНИЦУ
-      </a>
+      <div class="search__wrapper">
+        <h3 class="search__title">заинтересовались?</h3>
+        <p class="search__description">
+          УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ, ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ
+          ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+        </p>
+        <a class="search__link" href="catalog.html"> НАЙТИ ГОСТИНИЦУ </a>
+      </div>
     </section>
     <section class="map">
-      <h3 class="map__title visually-hidden"> Карта</h3>
+      <h3 class="map__title visually-hidden">Карта</h3>
       <div class="map__wrapper">
-        <img class="map__img" src="img/map-mobile.png" width="320" height="350" alt="карта.">
+        <iframe class="map__interactive"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13688499831!2d-111.83633796100058!3d34.85444188787669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sid!4v1683903463744!5m2!1sru!2sid"
+          width="100%" height="350" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -164,25 +175,40 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+              <img class="social__icon" src="img/vk.svg" alt="Иконка Вконтакте." />
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span>
+              <img class="social__icon" src="img/telegram.svg" alt="Иконка телеграм." />
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Ютубе</span>
+              <img class="social__icon" src="img/youtube.svg" alt="Иконка Ютуб." />
+            </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__logo" width="29" height="35" aria-hidden="true" focusable="false" viewBox="0 0 29 35"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z" />
+          </svg>
+        </a>
       </div>
     </div>
-
   </footer>
-</body>
 
+  <script src="js/nav.js"></script>
+</body>
 
 </html>

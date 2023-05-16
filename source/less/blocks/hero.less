@@ -2,4 +2,58 @@
   background-color: @bgcolorhero;
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
+  background-image: url("../../img/bg-hero.jpg");
+  align-items: center;
+  background-position: 50% 0;
+  background-size: cover;
+  height: 389px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../img/stairs.svg");
+    background-position: 50% 0;
+    width: 100%;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.hero__img {
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.hero--mini {
+  height: 158px;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 301px;
+  }
+}
+
+.hero__img--mini {
+  width: 229px;
+  height: 39px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
 }

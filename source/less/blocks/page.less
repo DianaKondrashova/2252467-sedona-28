@@ -1,3 +1,22 @@
 .page {
+  background-color: #f2f2f2;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
   background-color: @colorwhite;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }

@@ -1,0 +1,33 @@
+.social__item {
+  text-align: center;
+  list-style-type: none;
+}
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  background-color: @colorblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &:hover {
+    background-color: @colorblue-hover;
+  }
+
+  &:active {
+    background-color: @colorblue-active;
+
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}

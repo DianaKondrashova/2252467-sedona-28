@@ -1,4 +1,36 @@
 .copyright__text {
   .h-description();
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: @colorblack;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+  }
+
+  &:hover {
+    color: @colorblue;
+
+    .copyright__logo {
+      fill: @colorblue;
+    }
+  }
+
+  &:active {
+    color: #b3b3b3;
+
+    .copyright__logo {
+      fill: #b3b3b3;
+    }
+  }
+}
+
+.copyright__logo {
+  fill: @colorblack;
 }

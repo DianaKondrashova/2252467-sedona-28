@@ -6,14 +6,35 @@
 
 .head-content__wrapper {
   padding: 37px 20px 16px 27px;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 371px 65px 371px;
+  }
 }
 
 .head-content__title {
   .h-standart();
   color: @colorblack;
+  text-align: center;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .head-content__description {
   .h-description();
   color: @colorgray;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }

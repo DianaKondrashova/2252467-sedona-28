@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png">
 </head>
-
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
@@ -65,8 +67,16 @@
               СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
             </p>
           </div>
+          </div>
           <div class="advantages-card__img">
-            <img src="img/city.jpg" width="320" height="260" alt="Фото города и флаги." />
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/city-desktop@1x.jpg 1x,
+              img/city-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/city-tablet@1x.jpg 1x,
+              img/city-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/city-mobile@1x.jpg" srcset="img/city-mobile@1x.jpg 1x,
+              img/city-mobile@2x.jpg 2x" width="280" height="280" alt="Фото города и флаги.">
+            </picture>
           </div>
           <ul class="advantages-card__extra extra-card">
             <li class="extra-card__item card">
@@ -113,7 +123,14 @@
             </p>
           </div>
           <div class="advantages-card__img advantages-card__img--reverse">
-            <img src="img/mountains.jpg" width="320" height="260" alt="Фото гор." />
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/bridge-desktop@1x.jpg 1x,
+              img/bridge-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/bridge-tablet@1x.jpg 1x,
+              img/bridge-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/bridge-mobile@1x.jpg" srcset="img/bridge-mobile@1x.jpg 1x,
+              img/bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото гор.">
+            </picture>
           </div>
         </li>
         <li class="advantages-list__item advantages-card">

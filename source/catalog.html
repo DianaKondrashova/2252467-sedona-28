@@ -58,7 +58,16 @@
       <ul class="product-list">
         <li class="product-list__item">
           <div class="product">
-            <img class="product__img" src="img/not-my-space.jpg" alt="Просторы.">
+
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/not-my-spaces-desktop@1x.jpg 1x,
+              img/not-my-spaces-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/not-my-spaces-tablet@1x.jpg 1x,
+              img/not-my-spaces-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/not-my-spaces-mobile@1x.jpg" srcset="img/not-my-spaces-mobile@1x.jpg 1x,
+              img/not-my-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Просторы.">
+            </picture>
+
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">
@@ -80,7 +89,14 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <img class="product__img" src="img/tree.jpg" alt="Растения.">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/tree-desktop@1x.jpg 1x,
+              img/tree-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/tree-tablet@1x.jpg 1x,
+              img/tree-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/tree-mobile@1x.jpg" srcset="img/tree-mobile@1x.jpg 1x,
+              img/tree-mobile@2x.jpg 2x" width="280" height="280" alt="Растения.">
+            </picture>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">
@@ -102,7 +118,14 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <img class="product__img" src="img/road-and-tree.jpg" alt="Растения дорога.">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/road-and-tree-desktop@1x.jpg 1x,
+              img/road-and-tree-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/road-and-tree-tablet@1x.jpg 1x,
+              img/road-and-tree-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/road-and-tree-mobile@1x.jpg" srcset="img/road-and-tree-mobile@1x.jpg 1x,
+              img/road-and-tree-mobile@2x.jpg 2x" width="280" height="280" alt="Растения и Дорога.">
+            </picture>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">Дорога на север</h3>
@@ -121,7 +144,14 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <img class="product__img" src="img/bridge.jpg" alt="Мост.">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/mountains-desktop@1x.jpg 1x,
+              img/mountains-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/mountains-tablet@1x.jpg 1x,
+              img/mountains-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/mountains-mobile@1x.jpg" srcset="img/mountains-mobile@1x.jpg 1x,
+              img/mountains-mobile@2x.jpg 2x" width="280" height="280" alt="Мост.">
+            </picture>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">
@@ -200,4 +230,5 @@
 
   <script src="js/nav.js"></script>
 </body>
+
 </html>

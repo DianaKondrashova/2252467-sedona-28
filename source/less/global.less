@@ -40,3 +40,31 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.global-tablet-none {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.global-br-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.br-m-none {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.br-m-only {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

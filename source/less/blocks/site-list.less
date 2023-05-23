@@ -26,11 +26,22 @@
 }
 
 .site-list__link {
+  .font-bold();
+  font-size: 18px;
+  line-height: 26px;
   color: @colorwhite;
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
     color: @colorblack;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: @tablet-width) {
+    color: #766357;
   }
 }
 
@@ -53,8 +64,8 @@
   @media (min-width: @tablet-width) {
     border-top: none;
     border-bottom: none;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     flex: 1;
 
     &:nth-child(2) {

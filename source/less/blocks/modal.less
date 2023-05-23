@@ -1,0 +1,151 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: fade(#000000, 30%);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal--closed {
+  display: none;
+}
+
+.modal--opened {
+  display: flex;
+}
+
+.modal__content {
+  background-color: @colorwhite;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
+}
+
+.modal__content--big {
+  .modal__wrapper {
+    padding: 38px 32px 35px 32px;
+  }
+
+  .modal__description--ms {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+
+    .modal__description--ms {
+      margin-bottom: 21px;
+    }
+
+    .modal__title {
+      margin-bottom: 24px;
+    }
+
+    .modal__wrapper {
+      padding: 42px 97px 30px 97px;
+    }
+  }
+}
+
+.modal__wrapper {
+  padding: 45px 32px 35px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 47px 47px 49px 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 47px 49px 47px;
+  }
+}
+
+.modal__button-wrapper {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 91px;
+  }
+
+  .modal_button {
+    width: 100%;
+  }
+}
+
+.modal__title {
+  .h-standart();
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+
+    .br {
+      display: block;
+    }
+  }
+
+  .br {
+    display: none;
+  }
+}
+
+.modal__description {
+  .h-description();
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 47px;
+  }
+
+  .br {
+    display: none;
+  }
+}
+
+.modal__description--ms {
+  margin-bottom: 0;
+}
+
+.modal_button {
+  .h-standart();
+  color: @colorwhite;
+  background-color: @colorblue;
+  width: 180px;
+  border: none;
+  padding: 18px 18px 13px 18px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &:hover {
+    background-color: @colorblue-hover;
+  }
+
+  &:active {
+    background-color: @colorblue-active;
+    color: fade(@colorwhite, 30%);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

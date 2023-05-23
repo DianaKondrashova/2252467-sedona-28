@@ -5,19 +5,37 @@
   padding-top: 8px;
 
   @media (min-width: @tablet-width) {
+    .h-standart-bigger();
     padding-left: 0;
-    padding-top: 26px;
+    padding-top: 0;
+    margin-bottom: 24px;
   }
 }
 
 .card__description {
+  .h-description();
+  margin-top: 15px;
   color: @colorgray;
   padding-left: 47px;
+
+  .br {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     text-align: center;
-    padding-top: 26px;
+    margin-top: 0;
+
+    .br {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .br {
+      display: none;
+    }
   }
 }
 
@@ -29,9 +47,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 331px;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding: 58px 33px 61px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 72px 33px 61px 33px;
   }
 }
 
@@ -43,5 +63,6 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: static;
+    margin-bottom: 20px;
   }
 }

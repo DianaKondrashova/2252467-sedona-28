@@ -11,3 +11,19 @@
     padding: 0;
   }
 }
+
+.extra-card__item {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 6px;
+  }
+}

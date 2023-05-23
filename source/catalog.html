@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -48,9 +48,8 @@
     <section class="head-content">
       <div class="head-content__wrapper">
         <h2 class="head-content__title">Фото и видео</h2>
-        <p class="head-content__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
-        </p>
+        <p class="head-content__description">Не можете решиться на путешествие<br class="global-tablet-none"> из-за
+          курса?<br class="br"> Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
     <section class="product-catalog">
@@ -59,6 +58,12 @@
         <li class="product-list__item">
           <div class="product">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)"
+                srcset="img/not-my-spaces-desktop@1x.webp 1x, img/not-my-spaces-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/not-my-spaces-tablet@1x.webp 1x, img/not-my-spaces-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/not-my-spaces-mobile@1x.webp 1x, img/not-my-spaces-mobile@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/not-my-spaces-desktop@1x.jpg 1x,
               img/not-my-spaces-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/not-my-spaces-tablet@1x.jpg 1x,
@@ -86,12 +91,16 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/tree-desktop@1x.jpg 1x,
+            <source type="image/webp" media="(min-width:1200px)"
+              srcset="img/tree-desktop@1x.webp 1x, img/tree-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width:768px)"
+              srcset="img/tree-tablet@1x.webp 1x, img/tree-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/tree-mobile@1x.webp 1x, img/tree-mobile@2x.webp 2x">
+            <source media="(min-width:1200px)" srcset="img/tree-desktop@1x.jpg 1x,
               img/tree-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/tree-tablet@1x.jpg 1x,
+            <source media="(min-width:768px)" srcset="img/tree-tablet@1x.jpg 1x,
               img/tree-tablet@2x.jpg 2x">
-              <img class="product__img" src="img/tree-mobile@1x.jpg" srcset="img/tree-mobile@1x.jpg 1x,
+            <img class="product__img" src="img/tree-mobile@1x.jpg" srcset="img/tree-mobile@1x.jpg 1x,
               img/tree-mobile@2x.jpg 2x" width="280" height="280" alt="Растения.">
             </picture>
             <div class="product__wrapper-content">
@@ -115,6 +124,12 @@
         <li class="product-list__item">
           <div class="product">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)"
+                srcset="img/road-and-tree-desktop@1x.webp 1x, img/road-and-tree-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/road-and-tree-tablet@1x.webp 1x, img/road-and-tree-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/road-and-tree-mobile@1x.webp 1x, img/road-and-tree-mobile@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/road-and-tree-desktop@1x.jpg 1x,
               img/road-and-tree-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/road-and-tree-tablet@1x.jpg 1x,
@@ -141,6 +156,11 @@
         <li class="product-list__item">
           <div class="product">
             <picture>
+              <source type="image/webp" media="(min-width:1200px)"
+                srcset="img/mountains-desktop@1x.webp 1x, img/mountains-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)"
+                srcset="img/mountains-tablet@1x.webp 1x, img/mountains-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mountains-mobile@1x.webp 1x, img/mountains-mobile@2x.webp 2x">
               <source media="(min-width:1200px)" srcset="img/mountains-desktop@1x.jpg 1x,
               img/mountains-desktop@2x.jpg 2x">
               <source media="(min-width:768px)" srcset="img/mountains-tablet@1x.jpg 1x,
@@ -171,8 +191,8 @@
     <section class="video">
       <div class="video__wrapper">
         <h3 class="video__title"> Все еще сомневаетесь?</h3>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-          очередной раз!</p>
+        <p class="video__description">Смотрите видеопрезентацию и<br class="global-tablet-none"> скорее за билетами,
+          пока они<br class="br"> не<br class="global-tablet-none"> подорожали в очередной раз!</p>
         <div class="video__preview">
           <a class="video__preview-link" href="#">
             <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +203,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer--another">
     <div class="main-footer__wrapper">
       <div class="main-footer__title">
         <b>#VISITSEDONA</b>

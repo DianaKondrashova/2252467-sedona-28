@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .visually-hidden {
@@ -41,30 +41,20 @@ body {
   overflow: hidden;
 }
 
-.global-tablet-none {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
-.global-br-desktop {
-  display: none;
-
-  @media (min-width: @desktop-width) {
-    display: block;
-  }
-}
-
-.br-m-none {
+.m-d-none {
   @media (max-width: @mobile-width-only) {
     display: none;
   }
 }
 
-.br-m-only {
-  display: block;
+.t-d-none {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: none;
+  }
+}
 
-  @media (min-width: @tablet-width) {
+.d-d-none {
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }

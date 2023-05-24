@@ -33,14 +33,12 @@
   .advantages-card__title {
     color: @colorwhite;
 
-    .br {
-      display: none;
+    @media (min-width: @tablet-width) {
+      padding: 0 17px;
     }
 
-    @media (min-width: @tablet-width) {
-      .br {
-        display: block;
-      }
+    @media (min-width: @desktop-width) {
+      padding: 0 69px;
     }
   }
 
@@ -98,14 +96,11 @@
   @media (min-width: @tablet-width) {
     .h-standart-bigger();
     margin-bottom: 13px;
+    padding: 0 19px;
   }
 
-  .br {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
+  @media (min-width: @desktop-width) {
+    padding: 0 75px;
   }
 }
 
@@ -124,11 +119,10 @@
   .h-description();
   color: @colorgray;
   text-align: center;
+  padding: 0 9px;
 
-  @media (min-width: @desktop-width) {
-    .br {
-      display: none;
-    }
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
 

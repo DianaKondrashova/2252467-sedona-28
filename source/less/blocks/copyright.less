@@ -10,6 +10,14 @@
   gap: 10px;
   color: @colorblack;
 
+  &::after {
+    content: "";
+    mask-image: url("../../img/sprite-social-icons.svg#htmlacademy");
+    background-color: @colorblack;
+    width: 28px;
+    height: 35px;
+  }
+
   @media (min-width: @tablet-width) {
     justify-content: end;
   }
@@ -17,7 +25,7 @@
   &:hover {
     color: @colorblue;
 
-    .social__icon--htmlacademy {
+    &::after {
       background-color: @colorblue;
     }
   }
@@ -25,7 +33,7 @@
   &:active {
     color: #b3b3b3;
 
-    .social__icon--htmlacademy {
+    &::after {
       background-color: #b3b3b3;
     }
   }

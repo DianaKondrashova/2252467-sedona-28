@@ -76,6 +76,7 @@
 }
 
 .form__reviews {
+  margin: 0;
   padding: 24px 20px 37px 20px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
@@ -229,7 +230,7 @@
   color: @colorgray;
   opacity: 60%;
   text-align: right;
-  margin-top: 3px;
+  margin: 3px 0 0 0;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -255,6 +256,32 @@
 .form__wrapper {
   display: flex;
   flex-direction: row;
+
+  &::after {
+    content: "";
+    margin-left: -10px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    min-width: 58px;
+    min-height: 58px;
+    padding: 20px;
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.form__wrapper--icon-letter {
+  &::after {
+    background-image: url("../../img/mail.svg");
+  }
+}
+
+.form__wrapper--icon-phone {
+  &::after {
+    background-image: url("../../img/phone.svg");
+  }
 }
 
 .form__field--radio-check {
@@ -264,8 +291,8 @@
 }
 
 .form__mark {
-  width: 46px;
-  height: 46px;
+  min-width: 46px;
+  min-height: 46px;
   background-color: #f2f2f2;
   margin-right: 16px;
   position: relative;
@@ -290,7 +317,7 @@
   border-radius: 3px;
 }
 
-.form__control[type="radio"]:checked + .form__mark--radio::before {
+.form__control[type="radio"]:checked+.form__mark--radio::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -316,6 +343,13 @@
   background: url("../../img/tick.svg");
   border-radius: 50%;
   content: "";
+}
+
+.form__control[type="radio"]:focus-visible ~ .form__mark--radio,
+.form__control[type="checkbox"]:focus-visible ~ .form__mark--checkbox {
+  background-color: @colorwhite;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
 }
 
 .form__control--textarea {

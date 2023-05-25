@@ -2,21 +2,22 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png">
-  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
 </head>
+
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип"/>
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип" />
     </a>
     <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -45,7 +46,7 @@
   </header>
   <main class="main-container">
     <section class="hero">
-      <img class="hero__img" src="img/hero-text.svg" alt="SEDONA." width="282" height="214"/>
+      <img class="hero__img" src="img/hero-text.svg" alt="SEDONA." width="282" height="214" />
       <h1 class="visually-hidden">SEDONA</h1>
       <p class="visually-hidden">Because the Grand Canyon sucks!</p>
     </section>
@@ -58,53 +59,49 @@
     <section class="advantages">
       <ul class="advantages-list">
         <li class="advantages-list__item advantages-card advantages-card--blue">
-          <div class="advantages-card__down-stairs"></div>
           <div class="advantages-card__wrapper advantages-card__wrapper--stairs">
-            <h3 class="advantages-card__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <h3 class="advantages-card__title">НАСТОЯЩИЙ<br class="m-d-none">&nbsp;ГОРОДОК</h3>
             <p class="advantages-card__number">— №1 —</p>
-            <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br class="m-d-none t-d-none">&nbsp; ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p class="advantages-card__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br
+                class="m-d-none t-d-none">&nbsp; ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="advantages-card__img">
-            <picture>
-              <source type="image/webp" media="(min-width:1200px)"
-                srcset="img/city-desktop@1x.webp 1x, img/city-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="img/city-tablet@1x.webp 1x, img/city-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/city-mobile@1x.webp 1x, img/city-mobile@2x.webp 2x">
-              <source media="(min-width:1200px)" srcset="img/city-desktop@1x.jpg 1x,
-              img/city-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/city-tablet@1x.jpg 1x,
-              img/city-tablet@2x.jpg 2x">
-              <img class="advantages-card__img--main" src="img/city-mobile@1x.jpg" srcset="img/city-mobile@1x.jpg 1x,
-              img/city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города и флаги.">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                  srcset="img/city-desktop@1x.webp 1x, img/city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/city-tablet@1x.webp 1x, img/city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/city-mobile@1x.webp 1x, img/city-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="img/city-desktop@1x.jpg 1x,
+                img/city-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/city-tablet@1x.jpg 1x,
+                img/city-tablet@2x.jpg 2x">
+                <img class="advantages-card__img-main" src="img/city-mobile@1x.jpg" srcset="img/city-mobile@1x.jpg 1x,
+                img/city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города и флаги.">
+              </picture>
+            </a>
           </div>
           <ul class="advantages-card__extra extra-card">
             <li class="extra-card__item card">
-              <div class="card__item">
-                <div class="card__icon">
-                  <span class="icon icon--house"> </span>
-                </div>
+              <div class="card__item card__item--house">
                 <p class="card__title">ЖИЛЬЕ</p>
-                <p class="card__description">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br class="m-d-none t-d-none">&nbsp;МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                <p class="card__description">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br class="m-d-none t-d-none">&nbsp;МОТЕЛЕ,
+                  ВСЕ КАК В КИНО!</p>
               </div>
             </li>
             <li class="extra-card__item card">
-              <div class="card__item">
-                <div class="card__icon">
-                  <span class="icon icon--burger"></span>
-                </div>
+              <div class="card__item card__item--burger">
                 <p class="card__title">ЕДА</p>
-                <p class="card__description">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br class="m-d-none t-d-block">&nbsp;ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                <p class="card__description">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br class="m-d-none t-d-block">&nbsp;ВЫ
+                  НЕ РАЗОЧАРУЕТЕСЬ!</p>
               </div>
             </li>
             <li class="extra-card__item card">
-              <div class="card__item">
-                <div class="card__icon">
-                  <span class="icon icon--suv"></span>
-                </div>
+              <div class="card__item card__item--suv">
                 <p class="card__title">СУВЕНИРЫ</p>
-                <p class="card__description">НЕ ТОЛЬКО КИТАЙСКОГО,<br class="m-d-none t-d-block">&nbsp;НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                <p class="card__description">НЕ ТОЛЬКО КИТАЙСКОГО,<br class="m-d-none t-d-block">&nbsp;НО И МЕСТНОГО
+                  ПРОИЗВОДСТВА!</p>
               </div>
             </li>
           </ul>
@@ -113,26 +110,29 @@
           <div class="advantages-card__wrapper advantages-card__wrapper--reverse">
             <h3 class="advantages-card__title">ТАМ ЕСТЬ<br class="m-d-none">&nbsp;МОСТ ДЬЯВОЛА</h3>
             <p class="advantages-card__number">— №2 —</p>
-            <p class="advantages-card__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ!<br class="m-d-none t-d-none">&nbsp;ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+            <p class="advantages-card__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ!<br class="m-d-none t-d-none">&nbsp;ЕСЛИ ВЫ
+              ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
           </div>
           <div class="advantages-card__img advantages-card__img--reverse">
-            <picture>
-              <source type="image/webp" media="(min-width:1200px)"
-                srcset="img/bridge-desktop@1x.webp 1x, img/bridge-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="img/bridge-tablet@1x.webp 1x, img/bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/bridge-mobile@1x.webp 1x, img/bridge-mobile@2x.webp 2x">
-              <source media="(min-width:1200px)" srcset="img/bridge-desktop@1x.jpg 1x,
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                  srcset="img/bridge-desktop@1x.webp 1x, img/bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/bridge-tablet@1x.webp 1x, img/bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/bridge-mobile@1x.webp 1x, img/bridge-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="img/bridge-desktop@1x.jpg 1x,
               img/bridge-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/bridge-tablet@1x.jpg 1x,
+                <source media="(min-width:768px)" srcset="img/bridge-tablet@1x.jpg 1x,
               img/bridge-tablet@2x.jpg 2x">
-              <img class="advantages-card__img--main" src="img/bridge-mobile@1x.jpg" srcset="img/bridge-mobile@1x.jpg 1x,
+                <img class="advantages-card__img-main" src="img/bridge-mobile@1x.jpg" srcset="img/bridge-mobile@1x.jpg 1x,
               img/bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото гор.">
-            </picture>
+              </picture>
+            </a>
           </div>
         </li>
         <li class="advantages-list__item advantages-card">
-          <div class="advantages-card__wrapper--small">
+          <div class="advantages-card__wrapper-small">
             <h3 class="advantages-card__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p class="advantages-card__number">— №3 —</p>
             <p class="advantages-card__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
@@ -140,18 +140,20 @@
         </li>
         <li class="advantages-list__item advantages-card">
           <hr class="advantages-card__mobile-line" />
-          <div class="advantages-card__wrapper--small">
+          <div class="advantages-card__wrapper-small">
             <h3 class="advantages-card__title">КРАСИВАЯ ДОРОГА</h3>
             <p class="advantages-card__number">— №4 —</p>
-            <p class="advantages-card__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br class="t-d-none d-d-none">&nbsp;СОВСЕМ<br class="m-d-none d-d-none">&nbsp;НЕ СКУЧНО!</p>
+            <p class="advantages-card__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br
+                class="t-d-none d-d-none">&nbsp;СОВСЕМ<br class="m-d-none d-d-none">&nbsp;НЕ СКУЧНО!</p>
           </div>
           <hr class="advantages-card__mobile-line" />
         </li>
         <li class="advantages-list__item advantages-card">
-          <div class="advantages-card__wrapper--small">
+          <div class="advantages-card__wrapper-small">
             <h3 class="advantages-card__title">МАЛО ТУРИСТОВ</h3>
             <p class="advantages-card__number">— №5 —</p>
-            <p class="advantages-card__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br class="t-d-none d-d-none">&nbsp;И ТОЛПИТСЯ ТАМ</p>
+            <p class="advantages-card__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br class="t-d-none d-d-none">&nbsp;И
+              ТОЛПИТСЯ ТАМ</p>
           </div>
         </li>
       </ul>
@@ -159,7 +161,8 @@
     <section class="search">
       <div class="search__wrapper">
         <h3 class="search__title">Заинтересовались?</h3>
-        <p class="search__description">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br class="m-d-none t-d-block">&nbsp;И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <p class="search__description">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br class="m-d-none t-d-block">&nbsp;И МЫ
+          ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <a class="search__link" href="catalog.html">НАЙТИ ГОСТИНИЦУ</a>
       </div>
     </section>
@@ -168,7 +171,7 @@
       <div class="map__wrapper">
         <iframe class="map__interactive"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13688499831!2d-111.83633796100058!3d34.85444188787669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sid!4v1683903463744!5m2!1sru!2sid"
-          width="100%" height="350" allowfullscreen="" loading="lazy"
+          width="100" height="350" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
@@ -181,21 +184,18 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <span class="social__icon social__icon--vk"></span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
-              <span class="social__icon social__icon--telegram"></span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе</span>
-              <span class="social__icon social__icon--youtube"></span>
             </a>
           </li>
         </ul>
@@ -204,7 +204,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <span class="visually-hidden">HTML Academy</span>
-          <span class="social__icon social__icon--htmlacademy"></span>
         </a>
       </div>
     </div>

@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
 </head>
 
 <body class="page__body">
@@ -51,7 +51,8 @@
     <section class="head-content">
       <div class="head-content__wrapper">
         <h2 class="head-content__title">Фото и видео</h2>
-        <p class="head-content__description">Не можете решиться на путешествие из-за курса?<br class="m-d-none">&nbsp;Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="head-content__description">Не можете решиться на путешествие из-за курса?<br
+            class="m-d-none">&nbsp;Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
     <section class="product-catalog">
@@ -59,20 +60,22 @@
       <ul class="product-list">
         <li class="product-list__item">
           <div class="product">
-            <picture>
-              <source type="image/webp" media="(min-width:1200px)"
-                srcset="img/not-my-spaces-desktop@1x.webp 1x, img/not-my-spaces-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="img/not-my-spaces-tablet@1x.webp 1x, img/not-my-spaces-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/not-my-spaces-mobile@1x.webp 1x, img/not-my-spaces-mobile@2x.webp 2x">
-              <source media="(min-width:1200px)" srcset="img/not-my-spaces-desktop@1x.jpg 1x,
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                  srcset="img/not-my-spaces-desktop@1x.webp 1x, img/not-my-spaces-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/not-my-spaces-tablet@1x.webp 1x, img/not-my-spaces-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/not-my-spaces-mobile@1x.webp 1x, img/not-my-spaces-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="img/not-my-spaces-desktop@1x.jpg 1x,
               img/not-my-spaces-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/not-my-spaces-tablet@1x.jpg 1x,
+                <source media="(min-width:768px)" srcset="img/not-my-spaces-tablet@1x.jpg 1x,
               img/not-my-spaces-tablet@2x.jpg 2x">
-              <img class="product__img" src="img/not-my-spaces-mobile@1x.jpg" srcset="img/not-my-spaces-mobile@1x.jpg 1x,
+                <img class="product__img product__img--main" src="img/not-my-spaces-mobile@1x.jpg" srcset="img/not-my-spaces-mobile@1x.jpg 1x,
               img/not-my-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Просторы.">
-            </picture>
+              </picture>
+            </a>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">
@@ -93,18 +96,21 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <source type="image/webp" media="(min-width:1200px)"
-              srcset="img/tree-desktop@1x.webp 1x, img/tree-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width:768px)"
-              srcset="img/tree-tablet@1x.webp 1x, img/tree-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/tree-mobile@1x.webp 1x, img/tree-mobile@2x.webp 2x">
-            <source media="(min-width:1200px)" srcset="img/tree-desktop@1x.jpg 1x,
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                  srcset="img/tree-desktop@1x.webp 1x, img/tree-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/tree-tablet@1x.webp 1x, img/tree-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/tree-mobile@1x.webp 1x, img/tree-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="img/tree-desktop@1x.jpg 1x,
               img/tree-desktop@2x.jpg 2x">
-            <source media="(min-width:768px)" srcset="img/tree-tablet@1x.jpg 1x,
+                <source media="(min-width:768px)" srcset="img/tree-tablet@1x.jpg 1x,
               img/tree-tablet@2x.jpg 2x">
-            <img class="product__img" src="img/tree-mobile@1x.jpg" srcset="img/tree-mobile@1x.jpg 1x,
+                <img class="product__img" src="img/tree-mobile@1x.jpg" srcset="img/tree-mobile@1x.jpg 1x,
               img/tree-mobile@2x.jpg 2x" width="280" height="280" alt="Растения.">
-            </picture>
+              </picture>
+            </a>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">
@@ -125,20 +131,22 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <picture>
-              <source type="image/webp" media="(min-width:1200px)"
-                srcset="img/road-and-tree-desktop@1x.webp 1x, img/road-and-tree-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="img/road-and-tree-tablet@1x.webp 1x, img/road-and-tree-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/road-and-tree-mobile@1x.webp 1x, img/road-and-tree-mobile@2x.webp 2x">
-              <source media="(min-width:1200px)" srcset="img/road-and-tree-desktop@1x.jpg 1x,
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                  srcset="img/road-and-tree-desktop@1x.webp 1x, img/road-and-tree-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/road-and-tree-tablet@1x.webp 1x, img/road-and-tree-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/road-and-tree-mobile@1x.webp 1x, img/road-and-tree-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="img/road-and-tree-desktop@1x.jpg 1x,
               img/road-and-tree-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/road-and-tree-tablet@1x.jpg 1x,
+                <source media="(min-width:768px)" srcset="img/road-and-tree-tablet@1x.jpg 1x,
               img/road-and-tree-tablet@2x.jpg 2x">
-              <img class="product__img" src="img/road-and-tree-mobile@1x.jpg" srcset="img/road-and-tree-mobile@1x.jpg 1x,
+                <img class="product__img" src="img/road-and-tree-mobile@1x.jpg" srcset="img/road-and-tree-mobile@1x.jpg 1x,
               img/road-and-tree-mobile@2x.jpg 2x" width="280" height="280" alt="Растения и Дорога.">
-            </picture>
+              </picture>
+            </a>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">Дорога на север</h3>
@@ -157,19 +165,21 @@
         </li>
         <li class="product-list__item">
           <div class="product">
-            <picture>
-              <source type="image/webp" media="(min-width:1200px)"
-                srcset="img/mountains-desktop@1x.webp 1x, img/mountains-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width:768px)"
-                srcset="img/mountains-tablet@1x.webp 1x, img/mountains-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/mountains-mobile@1x.webp 1x, img/mountains-mobile@2x.webp 2x">
-              <source media="(min-width:1200px)" srcset="img/mountains-desktop@1x.jpg 1x,
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width:1200px)"
+                  srcset="img/mountains-desktop@1x.webp 1x, img/mountains-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width:768px)"
+                  srcset="img/mountains-tablet@1x.webp 1x, img/mountains-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/mountains-mobile@1x.webp 1x, img/mountains-mobile@2x.webp 2x">
+                <source media="(min-width:1200px)" srcset="img/mountains-desktop@1x.jpg 1x,
               img/mountains-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/mountains-tablet@1x.jpg 1x,
+                <source media="(min-width:768px)" srcset="img/mountains-tablet@1x.jpg 1x,
               img/mountains-tablet@2x.jpg 2x">
-              <img class="product__img" src="img/mountains-mobile@1x.jpg" srcset="img/mountains-mobile@1x.jpg 1x,
+                <img class="product__img" src="img/mountains-mobile@1x.jpg" srcset="img/mountains-mobile@1x.jpg 1x,
               img/mountains-mobile@2x.jpg 2x" width="280" height="280" alt="Мост.">
-            </picture>
+              </picture>
+            </a>
             <div class="product__wrapper-content">
               <div class="product__wrapper-info">
                 <h3 class="product__title">
@@ -193,9 +203,10 @@
     <section class="video">
       <div class="video__wrapper">
         <h3 class="video__title"> Все еще сомневаетесь?</h3>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br class="m-d-none">&nbsp;не подорожали в очередной раз!</p>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они<br
+            class="m-d-none">&nbsp;не подорожали в очередной раз!</p>
         <div class="video__preview">
-          <a class="video__preview-link" href="#">
+          <a class="video__preview-link" href="#" aria-label="Кнопка запуска видео.">
             <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7" />
             </svg>
@@ -212,21 +223,18 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <span class="social__icon social__icon--vk"></span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
-              <span class="social__icon social__icon--telegram"></span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе</span>
-              <span class="social__icon social__icon--youtube"></span>
             </a>
           </li>
         </ul>
@@ -235,7 +243,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <span class="visually-hidden">HTML Academy</span>
-          <span class="social__icon social__icon--htmlacademy"></span>
         </a>
       </div>
     </div>

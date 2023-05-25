@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
-  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
 </head>
+
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
@@ -46,7 +47,8 @@
       <div class="head-content__wrapper head-content__wrapper--form">
         <h2 class="head-content__title head-content__title--form">Оставьте свой отзыв</h2>
         <p class="head-content__description">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="m-d-none">&nbsp;а также о посещенных вами достопримечательностях
+          Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="m-d-none">&nbsp;а также о посещенных вами
+          достопримечательностях
         </p>
       </div>
     </section>
@@ -56,19 +58,19 @@
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">ИМЯ*:</span>
-            <input class="form__control" type="text" value="Пётр" required>
+            <input class="form__control" type="text" name="first_name" value="Пётр" required>
           </label>
         </div>
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">ФАМИЛИЯ*:</span>
-            <input class="form__control" type="text" value="Пустота" required>
+            <input class="form__control" type="text" name="last_name" value="Пустота" required>
           </label>
         </div>
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">ОТЧЕСТВО:</span>
-            <input class="form__control" type="text" value="Викторович">
+            <input class="form__control" type="text" name="surname" value="Викторович">
           </label>
         </div>
       </fieldset>
@@ -79,18 +81,16 @@
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">Контактный телефон*:</span>
-            <span class="form__wrapper">
-              <input class="form__control" type="phone" placeholder="Введите телефон" required>
-              <span class="icon icon--form icon--phone"></span>
+            <span class="form__wrapper form__wrapper--icon-phone">
+              <input class="form__control" type="tel" name="phone" placeholder="Введите телефон" required>
             </span>
           </label>
         </div>
         <div class="form__item">
           <label class="form__field">
             <span class="form__title">Электронная почта*:</span>
-            <span class="form__wrapper">
-              <input class="form__control" type="email" placeholder="Введите e-mail" required>
-              <span class="icon icon--form icon--letter"></span>
+            <span class="form__wrapper form__wrapper--icon-letter">
+              <input class="form__control" type="email" name="email" placeholder="Введите e-mail" required>
             </span>
           </label>
         </div>
@@ -102,21 +102,21 @@
         <div class="form__item-radio-grid">
           <div class="form__item">
             <label class="form__field form__field--radio-check">
-              <input class="form__control visually-hidden" type="radio" value="all-cool" name="my-opinion" checked>
+              <input class="form__control visually-hidden" type="radio" value="all-cool" name="my_opinion" checked>
               <span class="form__mark form__mark--radio"></span>
               <span class="form__label">Скорее положительное</span>
             </label>
           </div>
           <div class="form__item">
             <label class="form__field form__field--radio-check">
-              <input class="form__control visually-hidden" type="radio" value="bad" name="my-opinion">
+              <input class="form__control visually-hidden" type="radio" value="bad" name="my_opinion">
               <span class="form__mark form__mark--radio"></span>
               <span class="form__label">Скорее отрицательное</span>
             </label>
           </div>
           <div class="form__item">
             <label class="form__field form__field--radio-check">
-              <input class="form__control visually-hidden" type="radio" value="idk" name="my-opinion">
+              <input class="form__control visually-hidden" type="radio" value="idk" name="my_opinion">
               <span class="form__mark form__mark--radio"></span>
               <span class="form__label">Затрудняюсь ответить</span>
             </label>
@@ -183,21 +183,18 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <span class="social__icon social__icon--vk"></span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Мы в Телеграме</span>
-              <span class="social__icon social__icon--telegram"></span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы в Ютубе</span>
-              <span class="social__icon social__icon--youtube"></span>
             </a>
           </li>
         </ul>
@@ -206,7 +203,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <span class="visually-hidden">HTML Academy</span>
-          <span class="social__icon social__icon--htmlacademy"></span>
         </a>
       </div>
     </div>
@@ -216,9 +212,10 @@
     <div class="modal__content">
       <div class="modal__wrapper">
         <p class="modal__title">ЧТО-ТО ПОШЛО<br class="m-d-none">&nbsp;НЕ ТАК!</p>
-        <p class="modal__description">Проверьте поля, выделенные красным,<br class="m-d-none">&nbsp; скорее всего вы забыли их заполнить</p>
+        <p class="modal__description">Проверьте поля, выделенные красным,<br class="m-d-none">&nbsp; скорее всего вы
+          забыли их заполнить</p>
 
-        <button class="modal_button" type="button">OK</button>
+        <button class="modal__button" type="button">OK</button>
       </div>
     </div>
   </div>
@@ -227,11 +224,12 @@
     <div class="modal__content modal__content--big">
       <div class="modal__wrapper">
         <p class="modal__title">Ваш отзыв отправлен!</p>
-        <p class="modal__description modal__description--ms">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="modal__description modal__description--ms">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>
+          В ближайшее время мы опубликуем его на сайте.</p>
       </div>
 
       <div class="modal__button-wrapper">
-        <button class="modal_button" type="button">Закрыть окно</button>
+        <button class="modal__button" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>
